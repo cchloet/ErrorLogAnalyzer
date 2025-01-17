@@ -1,11 +1,11 @@
 import pandas as pd
 import logging
 from datetime import datetime
-from google.colab import files
+import os
 
 # Set up logging
 logging.basicConfig(
-    filename='logs/cleaning_errors.log',
+    filename='error_logs/cleaning_errors.log',
     level=logging.ERROR,
     format='%(asctime)s - %(levelname)s - %(message)s'
 )
@@ -55,5 +55,6 @@ def clean_and_log_errors(file_path):
 
 if __name__ == '__main__':
     # Input file path for the corrupted data
-    file_path = 'data/raw/corrupted_retail_sales_dataset.csv'
+    cwd = os.getcwd()
+    file_path = 'cwd'+'/data/corrupted_retail_sales_dataset.csv'
     clean_and_log_errors(file_path)
