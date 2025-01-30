@@ -6,7 +6,7 @@ ErrorLogAnalyzer/
 ├── \data      
 │   └── corrupted_retail_sales_dataset.csv       # Raw data files 
 ├── \src   
-│     ├── Function_Outline.md        #Function Overview  
+│     ├── ReadMe.md        #Function Overview  
 │     ├── dashboard_functions.py     # Visualization script
 │     └── error_log_functions.py     # Script that logs errors
 ├── README.md                  # Project documentation
